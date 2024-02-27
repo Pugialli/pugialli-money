@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 1400,
+      "createdAt": "2024-02-27T13:11:48.044Z"
+    },
+    {
+      "id": 2,
+      "description": "iFood",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 58,
+      "createdAt": "2024-02-27T10:11:48.044Z"
+    },
+    {
+      "id": 3,
+      "description": "Empresa",
+      "type": "income",
+      "category": "Salário",
+      "price": 9000,
+      "createdAt": "2024-02-15T10:11:48.044Z"
+    }
+  ]
+}
