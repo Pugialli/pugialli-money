@@ -1,6 +1,13 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import * as z from "zod";
 
+import { Controller, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
+
+import { useContextSelector } from "use-context-selector";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
+
+import { ArrowCircleDown, ArrowCircleUp, X } from "phosphor-react";
 import {
   CloseButton,
   Content,
@@ -8,9 +15,6 @@ import {
   TransactionTypeButton,
   TransactionType,
 } from "./styles";
-import { ArrowCircleDown, ArrowCircleUp, X } from "phosphor-react";
-import { Controller, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -27,13 +31,21 @@ export function NewTransactionModal() {
     register,
     handleSubmit,
     formState: { isSubmitting },
+    reset,
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
   });
 
+  const createTransactions = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.createTransactions;
+    }
+  );
+
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
+    createTransactions(data);
+    reset();
   }
 
   return (

@@ -31,6 +31,22 @@
       "category": "Alimentação",
       "price": 26.73,
       "createdAt": "2024-02-27T18:11:48.044Z"
+    },
+    {
+      "description": "Desenvolvimento Design System",
+      "price": 500,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-02-27T22:46:32.488Z",
+      "id": 5
+    },
+    {
+      "description": "Almoço de comemoração da promoção (Mocelin)",
+      "price": 500,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-02-27T22:59:47.292Z",
+      "id": 6
     }
   ]
 }
