@@ -23,6 +23,14 @@
       "category": "Salário",
       "price": 9000,
       "createdAt": "2024-02-15T10:11:48.044Z"
+    },
+    {
+      "id": 4,
+      "description": "Açaí",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 26.73,
+      "createdAt": "2024-02-27T18:11:48.044Z"
     }
   ]
 }
