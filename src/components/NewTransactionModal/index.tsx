@@ -14,7 +14,7 @@ import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
-  price: z.bigint(),
+  price: z.number().multipleOf(0.01),
   category: z.string(),
   type: z.enum(["income", "outcome"]),
 });
