@@ -2,7 +2,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import * as z from "zod";
 
 import { Controller, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 import { useContextSelector } from "use-context-selector";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
