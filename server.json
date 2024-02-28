@@ -47,6 +47,14 @@
       "type": "outcome",
       "createdAt": "2024-02-27T22:59:47.292Z",
       "id": 6
+    },
+    {
+      "description": "Curso Rocketseat",
+      "price": 1900,
+      "category": "Educação",
+      "type": "outcome",
+      "createdAt": "2024-02-28T00:20:12.676Z",
+      "id": 7
     }
   ]
 }
