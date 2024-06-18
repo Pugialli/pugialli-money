@@ -1,5 +1,4 @@
 {
-  "homepage": "https://pugialli.github.io/pugialli-money/",
   "name": "pugialli-money",
   "private": true,
   "version": "0.0.0",
@@ -10,9 +9,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint src --ext .tsx,.ts --fix",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
