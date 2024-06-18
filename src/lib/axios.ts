@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: process.env.APIURL,
+  baseURL: "https://pugialli-money-db.vercel.app",
 });
